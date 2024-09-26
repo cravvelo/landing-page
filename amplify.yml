@@ -8,6 +8,7 @@ frontend:
     build:
       commands:
         - pnpm run build && pnpm run export
+        - node amplify.mjs
   artifacts:
     baseDirectory: .next
     files:
